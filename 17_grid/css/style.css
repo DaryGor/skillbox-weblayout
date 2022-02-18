@@ -1,0 +1,761 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color_main       : #3F2AFF;
+  --color_light      : #FFF;
+  --color_dark_blue  : #212133;
+  --color_smoky_blue : #2E2B44;
+  --color_grey       : #666666;
+  --color_light_grey : #EDF0F9;
+  --color_violet     : #85859B;
+  --background_radial: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+
+/* Общие стили секций*/
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  max-width   : 100%;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+ul {
+  list-style: none;
+  padding   : 0;
+  margin    : 0;
+}
+
+a {
+  text-decoration: none;
+  cursor         : pointer;
+}
+
+button {
+  padding         : 0;
+  border          : none;
+  font            : inherit;
+  color           : inherit;
+  background-color: transparent;
+  cursor          : pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.custom-container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.margin30 {
+  margin-bottom: 30px;
+}
+
+.section--padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: -8px;
+}
+
+@media (max-width: 576px) {
+
+  .section-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.section-title--dark {
+  color: var(--color_dark_blue);
+}
+
+.section-title--light {
+  color: var(--color_light);
+}
+
+.btn {
+  align-items  : center;
+  padding      : 24px 75.5px;
+  background   : var(--color_main);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color        : var(--color_light);
+  border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+
+  .btn {
+    padding      : 20px 53px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+
+/* Секция Header */
+
+.header {
+  background: var(--color_main);
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    height: 133px;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .header {
+    height: 80px;
+    padding-top: 37px;
+  }
+
+  .header__wrapper,
+  .navigation__list {
+    display    : flex;
+    align-items: center;
+    height: 80px;
+  }
+}
+
+
+.header__wrapper,
+.navigation__list {
+  display    : flex;
+  align-items: center;
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+
+  .header__wrapper {
+    height: 0px;
+    gap: 38px;
+  }
+
+  .navigation__list {
+    height: 0px;
+  }
+}
+
+
+.header__wrapper {
+  justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+
+  .header__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .header__wrapper {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .section-hero__content {
+    margin: 50px 0;
+    padding-right: 0px;
+  }
+
+  .header__logo {
+    transform: scale(0.8) translateX(-15px);
+  }
+}
+
+
+
+.navigation__list {
+  gap: 60px;
+}
+
+@media (max-width: 576px) {
+
+  .navigation__list {
+    display: none;
+  }
+}
+
+.navigation__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color_light);
+}
+
+.navigation__burger {
+  display: none;
+}
+
+@media (max-width: 576px) {
+
+  .navigation__burger {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Секция Hero */
+
+.section-hero {
+  background: var(--background_radial);
+}
+
+.section-hero .container .row {
+  --bs-gutter-y: 0px;
+}
+
+.section-hero__content {
+  margin: 130px 0 130px 0;
+}
+
+@media (max-width: 768px) {
+
+  .section-hero__content {
+    margin: 75px 0 135px 0;
+    padding-right: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .section-hero__content {
+    margin: 50px 0;
+    padding-right: 0px;
+  }
+}
+
+.section-hero__title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 58px;
+  letter-spacing: -0.03em;
+  color: var(--color_light);
+  margin-bottom: 35px;
+}
+
+@media (max-width: 992px) {
+
+  .section-hero__title {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .section-hero__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+}
+
+.section-hero__descr {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  color:  var(--color_light);
+  margin-bottom: 65px;
+}
+
+
+@media (max-width: 992px) {
+
+  .section-hero__descr {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 65px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .section-hero__descr {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 46px;
+  }
+}
+
+.section-hero__img {
+    position: absolute;
+    bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+
+  .section-hero__img {
+    bottom: 130px;
+}
+}
+
+@media (max-width: 992px) {
+
+  .section-hero__img {
+    bottom: 190px;
+    right: 50px;
+    transform: scale(1.3);
+}
+}
+
+@media (max-width: 768px) {
+
+  .section-hero__img {
+   display: none;
+}
+}
+
+/* Секция Преимущества*/
+
+.section--padding {
+  padding: 80px 0 80px 0;
+}
+
+
+@media (max-width: 576px) {
+
+  .section--padding {
+    padding: 50px 0 50px 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .section-advantages {
+    padding: 80px 0 55px 0;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .section-advantages {
+    padding: 20px 0 50px 0;
+  }
+}
+
+.section-advantages__texture {
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+  .section-advantages__texture {
+    padding-top: 0px;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 576px) {
+
+  .section-advantages__texture {
+    display: none;
+  }
+}
+
+.section-advantages__content {
+  padding-right: 50px;
+}
+
+
+@media (max-width: 768px) {
+
+  .section-advantages__content {
+    padding-right: 5px;
+  }
+}
+
+.section-advantages__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: var(--color_smoky_blue);
+  margin-bottom: 20px;
+  padding-right: 150px;
+  margin-top: -5px;
+}
+
+
+@media (max-width: 992px) {
+
+  .section-advantages__title  {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .section-advantages__title {
+    letter-spacing: -0.02em;
+    padding-right: 0px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .section-advantages__title  {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 5px;
+  }
+}
+
+.section-advantages__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24p;
+  color: var(--color_grey);
+  margin-bottom: 25px;
+}
+
+.section-advantages__item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 992px) {
+
+  .section-advantages__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .section-advantages__item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+
+.section-advantages__desc {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color_grey);
+}
+
+/* Текст карточек */
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card__title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 8px;
+}
+
+.card__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card__title--light {
+  color: var(--color_light);
+}
+
+.card__text--light {
+  color: var(--color_violet);
+}
+
+.card__title--dark {
+  color: var(--color_dark_blue);
+}
+
+.card__text--dark {
+  color: var(--color_grey);
+}
+
+
+/* Секция Преподаватели */
+
+.section-teachers {
+  background: var(--color_dark_blue);
+  padding: 65px 0 70px 0;
+}
+
+.teach-card__descr {
+  padding-top: 30px;
+}
+
+
+@media (max-width: 576px) {
+
+  .section-teachers {
+    padding: 45px 0 50px 0;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  /* .teach-card {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+}
+
+.teach-card__img-wrapper {
+  max-width: 255px;
+  max-height: 180px;
+}
+
+.teach-card__img-wrapper picture {
+  border-radius: 0px 0px 20px 20px;
+}
+
+@media (max-width: 992px) {
+
+  .teach-card__img-wrapper {
+    max-width: 330px;
+    max-height: 180px;
+  }
+
+  .teach-card__descr {
+    max-width: 330px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .teach-card__img-wrapper {
+    max-width: 240px;
+    max-height: 180px;
+  }
+
+  .teach-card__descr {
+    max-width: 240px;
+  }
+
+}
+
+@media (max-width: 567px) {
+
+  .teach-card__img-wrapper {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .teach-card__descr {
+    max-width: 100%;
+  }
+
+
+}
+
+
+
+  /* Секция Курсы */
+
+  .section-career {
+    padding: 70px 0 80px 0;
+  }
+
+  @media (max-width: 992px) {
+
+    .section-career {
+      padding: 50px 0 50px 0;
+    }
+
+  }
+
+  .career-card__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--color_light_grey);
+    border-radius: 0px 0px 20px 20px;
+    padding: 30px;
+    min-height: 300px;
+  }
+
+  @media (max-width: 992px) {
+
+    .career-card__text-wrapper {
+      padding: 28px;
+      min-height: 375px;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+
+    .career-card__text-wrapper {
+      min-height: 473px;
+    }
+
+  }
+
+  .career-card__img-wrapper {
+    position: relative;
+  }
+
+  .career-card__time-wrapper {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    z-index: 10;
+    top: 10px;
+    right: 4px;
+  }
+
+  @media (max-width: 992px) {
+
+    .career-card__time-wrapper {
+      position: absolute;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      z-index: 10;
+      top: 7px;
+      right: 12px;
+    }
+  }
+
+  .career-card__time {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color_light);
+  }
+
+  .career-card__text--margin {
+    margin-bottom: 32px;
+  }
+
+  .btn--mini {
+    padding: 20.5px 59px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 991px) {
+
+    .btn--mini {
+      padding: 20.5px 55.5px;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .btn--mini {
+      padding: 20.5px 48px;
+      font-size: 16px;
+    }
+  }
+
+  .card__btn {
+    display: inline-block;
+    align-self: flex-start;
+    justify-content: flex-end;
+    justify-self: flex-end;
+  }
+
+  /* Секция футер */
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--color_smoky_blue);
+    height: 80px;
+  }
+
+  .footer__icon {
+    padding: 3px;
+  }
+
+  .footer__logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_light);
+    height: 18px;
+  }
+
+  .footer__logo , .footer__year , .footer__trademark {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: var(--color_smoky_blue);
+  }
+
+  .footer__trademark {
+    color: var(--color_main);
+  }
+

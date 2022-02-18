@@ -1,0 +1,461 @@
+* {
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Muller Regular';
+  src: local('Muller Regular'), local('MullerRegular'),
+      url('../fonts/MullerRegular.woff2') format('woff2'),
+      url('../fonts/MullerRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller Medium';
+  src: local('Muller Medium'), local('MullerMedium'),
+      url('../fonts/MullerMedium.woff2') format('woff2'),
+      url('../fonts/MullerMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller Bold';
+  src: local('Muller Bold'), local('MullerBold'),
+      url('../fonts/MullerBold.woff2') format('woff2'),
+      url('../fonts/MullerBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  font-family: 'Muller Regular', 'Muller Medium', 'Muller Bold', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #E5E5E5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin:0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 110px;
+  font-family: 'Muller Regular', sans-serif;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  font-style: normal;
+}
+
+.tel {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666;
+}
+
+.logo {
+  margin-right: 40px;
+}
+
+.login {
+  font-family: 'Muller Regular', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+}
+
+.nav {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  padding: 0 45px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  border-right: 2px dotted gray;
+  font-family: 'Muller Regular', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  padding-left: 57px;
+  font-family: 'Muller Regular', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #cc9933;
+}
+
+.nav-list-item {
+  align-items: center;
+  justify-content: center;
+  margin-right: 45px;
+}
+
+.nav-list-item:last-child {
+  margin-right: 57px;
+}
+
+.nav-btn-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+button {
+  display: inline-block;
+  border: 1px solid #CC9933;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 13px 19px;
+  color:#CC9933;
+  cursor: pointer;
+}
+
+
+/* Спецпредложения */
+
+.section-heading {
+  margin-left: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: 'Muller Regular', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333;
+}
+
+.section-specials {
+  padding-top: 73px;
+  padding-bottom: 69px;
+}
+
+.section-specials-container {
+  max-width: 1200px;
+}
+
+.section-specials-list {
+  display: flex;
+}
+
+.section-specials-link {
+  color: #FFCC66;
+}
+
+.section-specials-item {
+  flex: 1 1 25%;
+}
+
+.section-specials-item-left {
+  max-width: 573px;
+  margin-right: 23px;
+  padding: 40px 234px 40px 40px;
+  background-color: #333;
+  border-radius: 15px;
+}
+
+.section-specials-item-left:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.section-specials-right {
+  max-width: 573px;
+  margin-right: 23px;
+  padding: 211px 234px 41px 40px;
+  background-color: #333;
+  border-radius: 15px;
+}
+
+.section-specials-heading-left {
+  display: block;
+  margin-bottom: 15px;
+  font-family: 'Muller Bold', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color:#fff;
+}
+
+.section-specials-heading-right {
+  display: block;
+  margin-bottom: 15px;
+  font-family: 'Muller Bold', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  color:#fff;
+}
+
+
+.section-specials-discription-left {
+  display: block;
+  margin-bottom: 47px;
+  font-family: 'Muller Regular', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color:#fff;
+  opacity: 0.8;
+}
+
+.section-specials-discription-right {
+  display: block;
+  margin-bottom: 47px;
+  font-family: 'Muller Regular', sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color:#fff;
+  opacity: 0.8;
+}
+
+/* О нас */
+
+.section-heading-about {
+  margin-bottom: 11px;
+}
+
+.section-about-text {
+  max-width: 75%;
+  font-family: 'Muller Regular', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+/* Услуги */
+.section-services {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-services-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.section-services-item {
+  flex: 1 1 45%;
+  max-width: 573px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 23px;
+  padding-bottom: 25px;
+}
+
+.section-services-item-1 {
+  background-image: url('../img/10.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.section-services-item-2 {
+  background-image: url('../img/15.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.section-services-item-3 {
+  background-image: url('../img/12.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.section-services-item-4 {
+  background-image: url('../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash\ \(2\).jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+.section-services-item:nth-child(2n-1) {
+  margin-right: 23px;
+}
+
+.section-services-link {
+  display: block;
+  padding-top: 200px;
+  padding-left: 45px;
+  font-family: 'Muller Regular', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  color:#cc9933;
+}
+
+.section-services-description {
+  display: block;
+  padding-left: 45px;
+  max-width: 80%;
+  font-family: 'Muller Regular', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+/* Преимущества */
+.section-advantages {
+  padding-bottom: 70px;
+}
+
+.section-heading-advantages {
+  margin-bottom: 30px;
+}
+
+.section-advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-advantages-item {
+  flex: 1 1 20%;
+  max-width: 275px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 23px;
+  margin-right: 23px;
+  padding-bottom: 41px;
+}
+
+.section-advantages-item:nth-child(4n+4) {
+  margin-right: 0px;
+}
+
+.section-advantages-img {
+  padding-left: 45px;
+  padding-top: 40px;
+}
+
+.section-advantages-discription {
+  padding-left: 45px;
+  padding-right: 42px;
+  font-family: 'Muller Regular', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+/* Размещение */
+
+.section-placement {
+  padding-bottom: 70px;
+}
+
+.section-heading-placement {
+  padding-bottom: 25px;
+}
+
+.section-placement-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-placement-item {
+  flex: 1 1 25%;
+  max-width: 375px;
+  margin-bottom: 23px;
+  margin-right: 23px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.section-placement-item:nth-child(3n+3) {
+  margin-right: 0px;
+}
+
+.section-placement-item-over {
+  flex: 1 1 25%;
+  margin-bottom: 23px;
+  padding-left: 45px;
+  padding-top: 380px;
+  background-color: #333;
+  background-image: url(../img/41.jpg);
+  background-repeat: round;
+  border-radius: 15px;
+}
+
+.section-placement-link-over {
+  font-family: 'Muller Medium', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #fff;
+}
+
+.section-placement-content {
+  padding: 30px 45px 40px 45px;
+}
+
+.section-placement-content-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-placement-text-light {
+  color: #999;
+}
+
+.section-placement-text {
+  color: #000;
+}
+
+.section-placement-content-text {
+  margin-right: auto;
+}
+
+.section-placement-locality {
+  display: block;
+  margin-bottom: 15px;
+  font-family: 'Muller Regular', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.section-placement-country {
+  display: block;
+  margin-bottom: 30px;
+  font-family: 'Muller Regular', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999;
+}
+
+
